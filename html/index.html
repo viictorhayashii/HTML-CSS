@@ -1,0 +1,109 @@
+<!-- especifica que esta sendo utilizado a versao mais recente do html -->
+<!DOCTYPE html>
+<!-- define a forma de acentuacao e dicionario pt-br -->
+<html lang="pt-br">
+	<head>
+        <!-- usa o dicionario respectivo de cada usuario -->
+        <meta charset="UTF-8">
+        <!-- altera o width padrao para o width do device -->
+        <meta name="viewport" content="width=device-width"> 
+        <!-- titulo da pagina na aba do Browser -->
+        <title>Barbearia Alura</title>
+        <!-- linkagem do css ou outros elementos\s no html  -->
+        <link rel="stylesheet" href="../style/reset.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	</head>
+    <!-- body - corpo do projeto -->
+	<body>
+        <!-- header é a primeira parte vista na sua pagina, praticamente o cabeçalho -->
+        <header>
+            <!-- div é utilizado para fazer a divisao de elementos visuais -->
+            <div class="caixa">
+                <!-- h1 - texto principal da tela -->
+                <h1><img src="../images/logo.png" alt="logo"></h1>
+                <!-- nav - tag utilizada que representa o menu de navegação da pagina -->
+                <nav>
+                    <!-- ul é uma lista nao ordenada -->
+                    <ul>
+                        <!-- li representa uma linha da lista -->
+                        <li>
+                            <!-- a - ancora, a tag a faz a linkagem de paginas no html     -->
+                            <a href="../html/index.html">Home</a>
+                        </li>
+                        <li><a href="../html/produtos.html">Produtos</a></li>
+                        <li><a href="../html/contato.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- img é a tag utilizada para atribuir imagens ao html -->
+        <img class="banner" src="../images/banner.jpg">
+
+        <!-- main é o conteudo principal da pagina -->
+        <main>
+            <!-- p - paragrafo ou texto -->
+            <p>Hello Word</p>
+            <!-- section - utilizado para fazer a divisao de textos -->
+            <section class="principal">
+                <!-- h2 - titulo secundarioda pagina -->
+                <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+        
+                <img class="utensilios" src="../images/utensilios.jpg" alt="Utensilios Barbearia">
+
+                <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+                <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+                <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            </section>
+
+            <section class="mapa">
+                <h3 class="titulo-principal">Nosso Estabelecimento</h3>
+                <p>Nosso estabelecimento esta localizado no coração da cidade.</p>
+                <div class="mapa-conteudo">
+                    <!-- iframe - principal tag para importacao de conteudos externos, como videos,mapas, etc. -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.448460711846!2d-46.632464700000014!3d-23.588244300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1610543628714!5m2!1spt-BR!2sbr"
+                    width="100%"
+                    frameborder="0"
+                    style="border:0;"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+                </div>
+                
+            </section>
+
+            <section class="beneficios">
+                <h3 class="titulo-principal">Beneficios</h3>
+                <div class="conteudo-beneficios">
+                    <ul class="lista-beneficios">
+                        <li class="itens">Atendimento aos Clientes</li>
+                        <li class="itens">Espaço diferenciado</li>
+                        <li class="itens">Localização</li>
+                        <li class="itens">Profissionais Qualificados</li>
+                        <li class="itens">Pontualidade</li>
+                        <li class="itens">Limpeza</li>
+                    </ul><img src="../images/beneficios.jpg" class="imagem-beneficios">
+                </div>
+
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                </div>
+                
+            </section>
+        </main>
+        <!-- footer - rodape da pagina  -->
+        <footer>
+            <img src="../images/logo-branco.png" alt="Logo">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2021</p>
+        </footer>
+    
+    </body>
+</html>
